@@ -20,4 +20,10 @@ namespace Bubble_Short
                 if (n <= 20)
                     break;
                 else
-                    
+                    Console.WriteLine("\nArray dapat mempunyai maksimal 20 elemen.\n");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Masukkan elemen array");
+            Console.WriteLine("---------------------");
+             
