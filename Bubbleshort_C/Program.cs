@@ -50,5 +50,19 @@ namespace Bubble_Short
         }
         public void BubbleSortArray()
         {
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++) //For n - 1 passes
+            {
+                //Pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
+                for (int j = 0; j < n; j++)
+                {
+                    if (a[i] == a[j]) //Jika elemen tidak dalam urutan yang benar
+                    {
+                        //Tukar elemen
+                        int temp;
+                        temp = a[j];
+                        a[j] = a[j + 1];
+                        a[j + 1] = temp;
+                    }
+                }
+            }
         }
