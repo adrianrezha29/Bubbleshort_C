@@ -1,15 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bubbleshort_C
+namespace Bubble_Short
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        //Deklarasi array int dengan ukuran 20
+        private int [] a = new int [20];
+
+        //Deklarasi variabel int untuk menyimpan banyaknya data pada array
+        private int n;
+        //Fungsi / Method untuk menerima masukan
+        public void read()
         {
-        }
-    }
-}
+            //Menerima angka untuk menentukan banyaknya data yang disimpan pada array
+            while (true)
+            {
+                Console.Write("Masukkan banyaknya elemen pada Array: ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 20)
+                    break;
+                else
+                    
