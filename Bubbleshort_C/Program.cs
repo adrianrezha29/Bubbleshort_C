@@ -4,7 +4,7 @@ namespace Bubble_Short
     class Program
     {
         //Deklarasi array int dengan ukuran 20
-        private int [] a = new int [20];
+        private int[] a = new int[20];
 
         //Deklarasi variabel int untuk menyimpan banyaknya data pada array
         private int n;
@@ -66,3 +66,20 @@ namespace Bubble_Short
                 }
             }
         }
+
+        static void Main(string[] args)
+        {
+            //Creating the object of the Bubblesort class
+            Program myList = new Program();
+            //Pemanggilan fungsi untuk menerima elemen array
+            myList.read();
+            //Pemanggilan fungsi untuk mengurutkan array
+            myList.BubbleSortArray();
+            //Pemanggilan fungsi untuk menampilkan array yang tersusun
+            myList.display();
+            //Exit
+            Console.WriteLine("\n\nTekan Tombol Apa Saja Untuk Keluar.");
+            Console.Read();
+        }
+    }
+}
